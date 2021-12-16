@@ -1,16 +1,16 @@
-Option Explicit     'Bu değişken tanımlı olup olmadığını kontrol eder.
+Option Explicit               'Değişkenlerin tanımlamalarını kontrol eder. Tanımlamanızı ister.
 
 Sub YorumEklemek()
 'Yorum satırı tek tırnak şeklinde
 Rem -başına rem yazdığımız zamanda yorum satırı olabiliyor
 
-Range("A1").Value = "Mehmet"  ' "A1" hücresine değer yazdırılır.
+Range("A1").Value = "Mehmet"        ' "A1" hücresine değer yazdırılır.
 Range("A1").Interior.Color = vbRed  'Hücrenin rengini değiştirilir
-Range("A1").Clear       'Hücre temizleniyor
+Range("A1").Clear                   'Hücre temizleniyor
 
-Range("TanimAd").Value = "Mustafa"  ' Sayfa üzerinden tanımlanan hücreye değer ataması
-Range("TanimAd").Interior.Color = vbBlue   'Tanımlı Hücrenin rengini değiştirilir
-Range("TanimAd").Clear       'Tanımlı Hücre temizleniyor
+Range("TanimAd").Value = "Mustafa"          ' Sayfa üzerinden tanımlanan hücreye değer ataması
+Range("TanimAd").Interior.Color = vbBlue    'Tanımlı Hücrenin rengini değiştirilir
+Range("TanimAd").Clear                      'Tanımlı Hücre temizleniyor
 
 End Sub
 
