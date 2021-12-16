@@ -14,9 +14,9 @@ End Sub
 Sub DiziOrnek2()
 'Dizi veya Array değişken tanımlamalar
 Dim myDizi1(5) As Integer   '(5) şeklinde üst  sınır belirtilir,
-                            'başlanğıç değeri 0 olan 6 tane değer alır.
-'Başlanğıç değerinin 1 den başlamasını istersek, "Option Base 1" şeklinde en üste eklenir.
-Dim myDizi2(0 To 5) As Integer  'başlanğıç değeride verilerek belirtilir.
+                            'başlangıç değeri 0 olan 6 tane değer alır.
+'Başlangıç değerinin 1 den başlamasını istersek, "Option Base 1" şeklinde en üste eklenir.
+Dim myDizi2(0 To 5) As Integer  'başlangıç değeride verilerek belirtilir.
 Dim myDizi3() As Integer    'Sınırları sonradan belirlenir.
 End Sub
 
