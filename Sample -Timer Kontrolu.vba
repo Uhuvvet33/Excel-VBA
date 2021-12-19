@@ -1,3 +1,4 @@
+
 Sub TimerKontrolu()
 ' Değişken tanımlamanın verimli kullanım örneği,
 ' İşin ne kadar sürdüğünü hesaplama

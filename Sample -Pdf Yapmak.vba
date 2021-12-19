@@ -1,3 +1,4 @@
+
 Sub Pdf_Yap
 DosyaYolu = CreateObject("WScript.Shell").SpecialFolders("Desktop") & Application.PathSeparator   'Dosya yolu olarak Masaüstü belirleniyor.
 'DosyaYolu = Worksheets("BilgiGirisi").Range("M2").Text   'Dosyayolunun hücre üzerinden alınması
