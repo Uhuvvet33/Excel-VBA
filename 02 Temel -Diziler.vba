@@ -1,3 +1,4 @@
+Option Explicit
 
 Sub DiziOrnek1()
 'Birden fazla tanımlamalar
@@ -14,9 +15,9 @@ End Sub
 Sub DiziOrnek2()
 'Dizi veya Array değişken tanımlamalar
 Dim myDizi1(5) As Integer   '(5) şeklinde üst  sınır belirtilir,
-                            'başlangıç değeri 0 olan 6 tane değer alır.
-'Başlangıç değerinin 1 den başlamasını istersek, "Option Base 1" şeklinde en üste eklenir.
-Dim myDizi2(0 To 5) As Integer  'başlangıç değeride verilerek belirtilir.
+                            'başlanğıç değeri 0 olan 6 tane değer alır.
+'Başlanğıç değerinin 1 den başlamasını istersek, "Option Base 1" şeklinde en üste eklenir.
+Dim myDizi2(0 To 5) As Integer  'başlanğıç değeride verilerek belirtilir.
 Dim myDizi3() As Integer    'Sınırları sonradan belirlenir.
 End Sub
 
@@ -55,6 +56,7 @@ For Each ay In aylar    'For Each döngüsü ile sadece okuma yapılabiliyor.
     Debug.Print ay
 Next ay
 End Sub
+
 Sub DinamikDizi()
 Dim subeler() As String
 
@@ -76,5 +78,31 @@ For i = LBound(mudur, 1) To UBound(mudur, 1)
     Next j
 Next i
 
-Debug.Print mudur(1, 2) '1 in 2. değeri çağrılıyor
+Debug.Print mudur(4, 2) '4 ün 2. değeri çağrılıyor
+End Sub
+
+Sub SplitOrnek()
+Dim veri As String
+veri = "3434;5436;78769;54534"  'veri içerisine değer atanıyor.
+
+Dim dizi As Variant
+'veri değişkenindeki değerler ";" lerden olacak şekilde dizi olarak ayrılıyor ve aktarılıyor.
+dizi = Split(veri, ";")
+
+Debug.Print dizi(2)     'dizinin 2. değeri gösteriliyor
+                        'Sonuç : 78769
+
+Dim i As Variant
+For Each i In dizi      'dizinin tamamını ayrı olarak listelemek
+    Debug.Print i
+Next i
+End Sub
+
+Sub joinOrnegi()
+Dim a As String
+Dim veri As Variant
+veri = Array(356, 456, 556)  'dizi değerleri
+
+a = Join(veri, ";")          'dizi değerlerini ";" ile birleştiriliyor.
+Debug.Print a                'Sonuç : 356;456;556
 End Sub
