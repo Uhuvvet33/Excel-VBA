@@ -1,5 +1,6 @@
 Option Explicit
 'Interaction MsgBox
+'----------------------------------------------------------
 
 Sub BilgiTopla()
 Dim cvp As VbMsgBoxResult   'değişken olarak tanımlaması
@@ -13,6 +14,7 @@ Dim cvp As VbMsgBoxResult   'değişken olarak tanımlaması
     End If
 
 End Sub
+'----------------------------------------------------------
 
 Sub IptalYok()
 Dim hata As Error
@@ -24,13 +26,12 @@ cvp = MsgBox("Cevabınız ?", vbYesNo)
 Exit Sub
 hata:
 Debug.Print Err.Description
-
 End Sub
+'----------------------------------------------------------
 
 Sub IptalVar()
 Dim cvp As VbMsgBoxResult   'değişken olarak tanımlaması
 'Dim hata As Error
-
 'On Error GoTo hata
     cvp = MsgBox("Cevab verir misin?", vbYesNoCancel) 'iptal seçeneğide ekleniyor
     If cvp = vbYes Then
@@ -43,5 +44,4 @@ Dim cvp As VbMsgBoxResult   'değişken olarak tanımlaması
 'Exit Sub
 'hata:
 'Debug.Print Err.Description
-
 End Sub

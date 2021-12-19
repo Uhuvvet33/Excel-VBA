@@ -13,6 +13,7 @@ b = InputBox("İkinci bir sayı giriniz:")
 
 Range("B1").Value = Val(a) + Val(b)  'Val ile integer dönüşümü yapılıyor
 End Sub
+'----------------------------------------------------------
 
 Sub Giris3()
 Dim a As Integer, b As Integer
@@ -21,25 +22,25 @@ b = InputBox("İkinci bir sayı giriniz:")
 
 Range("B1").Value = a + b  'değişkenler Dİm ile integer olarak tanımlandı
 End Sub
+'----------------------------------------------------------
 
 Sub InputSyntax() 'InputBox  syntax
 a = InputBox("il kodu girin", "il kodu", 34)
              'verilen mesaj, bar üstünde, varsayılan 34 değeri
              
 End Sub
+'----------------------------------------------------------
 
 'Aplication InputBox; Aplication class altında yer alır, farkı sonuda type vardır.
-
 Sub ApplicationInputbox()
 Dim hucre As Range
 Set hucre = Application.InputBox(prompt:="Son hücreyi seçin", Type:=8)
 'En çok kullanılan typ türleri 1;Sayı , 2;Metin , 8;Range
 MsgBox hucre.Address    'seçilen hücreyi gösteriyoruz.
 End Sub
-
+'----------------------------------------------------------
 
 ' InputBox ; DETAYLAR
-'----------------------------------------------------------------
 Sub InputIptal2()
 'klasik InputBox
 deger = InputBox("bir değer giriniz:")      'varsayılan degeri String'tir
@@ -49,6 +50,7 @@ Else
     MsgBox "Bir değer girmediniz ..."
 End If
 End Sub
+'----------------------------------------------------------
 
 Sub InputIptal3()
 'Application'lı, String değer için iptal kontrolü
@@ -61,6 +63,7 @@ Else
     MsgBox "Değer girmediniz ..."
 End If
 End Sub
+'----------------------------------------------------------
 
 Sub InputIptal4()
 'Application'lı, Integer değer için iptal kontrolü
@@ -74,6 +77,7 @@ Else
     MsgBox "Değer girmediniz ..."
 End If
 End Sub
+'----------------------------------------------------------
 
 Sub InputRange()
 'Applicationlu, Range
@@ -89,6 +93,7 @@ Else
     MsgBox "Bir seçim yapılmadan çıkmayı tercih ettiniz"
 End If
 End Sub
+'----------------------------------------------------------
 
 Sub SayfaEkle()
 Dim i As Integer, syf As Integer   'değişken tanımlıyoruz
@@ -101,6 +106,7 @@ Else
     Next i
 End If
 End Sub
+'----------------------------------------------------------
 
 Sub KullaniciDostuKodlama()
 'kullanıcı açısından iyi, kodlamacı açısından da iyi

@@ -1,5 +1,4 @@
 'IF ELSEIF ENDIF; ÖRNEKLERİ
-
 Sub ifornegi1()
 'boolen örneği
 Dim ilkdeger As Boolean 'değişken tanımlama
@@ -20,6 +19,7 @@ Else
     Exit Sub
 End If
 End Sub
+'----------------------------------------------------------
 
 Sub ifornegi2()
 'boolen örneği, ilk değer olmadan işlem yapmak
@@ -37,9 +37,9 @@ Else
     Exit Sub
 End If
 End Sub
+'----------------------------------------------------------
 
 'MANTIKSAL SORGULAMALAR
-
 Sub Mantıksal()
 If IsNumeric(3) Then Debug.Print "Bu bir sayıdır"      'Varsayılan True
 If IsEmpty(ActiveCell) Then Debug.Print "Bu boş bir hücredir"
@@ -49,9 +49,9 @@ deger = 4
 If IsNull(deger) Then Debug.Print "Bu bir Null'dur"
 'Empty ve Null farklılıkları vardır
 End Sub
+'----------------------------------------------------------
 
 'If - ElseIf - EndIf ;  DETAYLARI
-
 Sub ifnot1()
 Set alan = ActiveCell       'aktif hücreyi alan değişkeniden aktarıyoruz
 If Not IsEmpty(alan) Then
@@ -61,6 +61,7 @@ Else
     MsgBox "Boş bir hücre seçtiniz."
 End If
 End Sub
+'----------------------------------------------------------
 
 Sub ifnot2()
 If Not DosyaVarmi(dosyaadi) Then
@@ -69,6 +70,7 @@ Else
     'dosya var ve işlemleri yap
 End If
 End Sub
+'----------------------------------------------------------
 
 Sub IfNot_IsNothing()
 Dim hucre As Range

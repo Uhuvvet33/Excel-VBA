@@ -1,5 +1,5 @@
 Option Explicit
-
+'----------------------------------------------------------
 Sub DiziOrnek1()
 'Birden fazla tanımlamalar
 Dim bolge1 As String
@@ -11,6 +11,7 @@ Dim bolge20 As String
 
 Dim bolge(1 To 20) As Integer   'Yukarıdaki şekilde tek tek yerine bu şekilde tanımlanabilir.
 End Sub
+'----------------------------------------------------------
 
 Sub DiziOrnek2()
 'Dizi veya Array değişken tanımlamalar
@@ -20,6 +21,7 @@ Dim myDizi1(5) As Integer   '(5) şeklinde üst  sınır belirtilir,
 Dim myDizi2(0 To 5) As Integer  'başlanğıç değeride verilerek belirtilir.
 Dim myDizi3() As Integer    'Sınırları sonradan belirlenir.
 End Sub
+'----------------------------------------------------------
 
 Sub DiziOrnek3()
 Dim i As Integer
@@ -28,6 +30,7 @@ For i = 1 To 12
     dizi1(i) = Sheets(1).Cells(i, 1)
 Next i
 End Sub
+'----------------------------------------------------------
 
 Sub DiziIyiAtama()
 Dim i As Integer
@@ -56,6 +59,7 @@ For Each ay In aylar    'For Each döngüsü ile sadece okuma yapılabiliyor.
     Debug.Print ay
 Next ay
 End Sub
+'----------------------------------------------------------
 
 Sub DinamikDizi()
 Dim subeler() As String
@@ -67,6 +71,7 @@ ReDim subeler(x) 'x ile dizinin boyutu sonradan belirleniyor.
 Dim statikVar As Variant    'Boyut belirtilmez ise dinamik tipli oluyur
 Dim dinamikVar(5) As Variant ' statitik tipli oluyor, bunlar üzerinde ReDim işlemi yapılmaz.
 End Sub
+'----------------------------------------------------------
 
 Sub IkiBoyutluDizi()
 Dim mudur(1 To 10, 1 To 2) As Long      'İki boyutlu değişken tanımlama
@@ -80,6 +85,7 @@ Next i
 
 Debug.Print mudur(4, 2) '4 ün 2. değeri çağrılıyor
 End Sub
+'----------------------------------------------------------
 
 Sub SplitOrnek()
 Dim veri As String
@@ -97,6 +103,7 @@ For Each i In dizi      'dizinin tamamını ayrı olarak listelemek
     Debug.Print i
 Next i
 End Sub
+'----------------------------------------------------------
 
 Sub joinOrnegi()
 Dim a As String

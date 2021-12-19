@@ -5,6 +5,7 @@ i = 8 \ 3   'mod alma, 2
 i = 8 Mod 3 'mod alma, 2
 i = 3 ^ 2   'üst alma, 9
 End Sub
+'----------------------------------------------------------
 
 Sub BoolDegerleri()
 Dim a As Boolean
@@ -19,6 +20,7 @@ End If
 
 'a = Not a      'a nın değeri True ise False olsun diyoruz
 End Sub
+'----------------------------------------------------------
 
 Sub Birlestirme()
 Dim a As String, b As String, c As Integer, d As Integer, e As String
@@ -40,6 +42,7 @@ mesaj = mesaj & "Yıldızlar"
 
 goster = InputBox(mesaj)
 End Sub
+'----------------------------------------------------------
 
 Sub SayiArttir()
 Dim i As Integer

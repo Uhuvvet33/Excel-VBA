@@ -1,10 +1,10 @@
-Option Explicit               'Değişkenleri tanımlanmanızı ister, zorlar.
-
+Option Explicit    'Değişkenleri tanımlanmanızı ister, zorlar.
+'----------------------------------------------------------
 Sub YorumEklemek()
-'Yorum satırı tek tırnak şeklinde
+'Burda olduğu gibi yorum satırı tek tırnak şeklinde
 Rem -başına rem yazdığımız zamanda yorum satırı olabiliyor
 
-Range("A1").Value = "Mehmet"        ' "A1" hücresine değer yazdırılır.
+Range("A1").Value = "Mehmet"        '"A1" hücresine değer yazdırılır.
 Range("A1").Interior.Color = vbRed  'Hücrenin rengini değiştirilir
 Range("A1").Clear                   'Hücre temizleniyor
 
@@ -13,13 +13,13 @@ Range("TanimAd").Interior.Color = vbBlue    'Tanımlı Hücrenin rengini değiş
 Range("TanimAd").Clear                      'Tanımlı Hücre temizleniyor
 
 End Sub
+'----------------------------------------------------------
 
 Sub DegiskenTanimlamak()
-
 Const bolgeSayisi As Integer = 10   'Sabit değer tanımlaması
-Dim isim As String          'Karakter değişken tipi
-Dim mini As Byte            '0 ile 255 arası değer alabilir.
-Dim sayi As Integer         'Sayı veri tipi örnek : 3
+Dim isim As String                  'Karakter değişken tipi
+Dim mini As Byte                    '0 ile 255 arası değer alabilir.
+Dim sayi As Integer                 'Sayı veri tipi örnek : 3
 Dim uzunSayi As Long
 Dim kisaSayi As Single
 Dim agirlik As Double       'Kayan veri tipi örnek : 3,17
