@@ -1,3 +1,4 @@
+'Satır gizle, göster
 Sub GizleGoster()
 'Gizle; Belirlenen sayfa ve hücrelerdeki boş hücreleri
   For Each t In Worksheets("Sayfa1").Range("c6:c38").Cells
