@@ -1,4 +1,4 @@
-Option Explicit               'Değişkenlerin tanımlamalarını kontrol eder. Tanımlamanızı ister.
+Option Explicit               'Değişkenleri tanımlanmanızı ister, zorlar.
 
 Sub YorumEklemek()
 'Yorum satırı tek tırnak şeklinde
