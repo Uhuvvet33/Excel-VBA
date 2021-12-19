@@ -4,7 +4,7 @@ Sub Kopyala()
   Application.CutCopyMode = False
   MsgBox "Kopyalama Yapıldı..!!"
 End Sub
-
+'---------------------------------------------------------------
 Sub Kopyala2()
   Sheets("Sayfa1").Range("A1:C10").Copy
   sat = Sheets("Sayfa2").Cells(65536, "A").End(xlUp).Row + 5
