@@ -10,8 +10,7 @@ Range("A1").Clear                   'Hücre temizleniyor
 
 Range("TanimAd").Value = "Mustafa"          ' Sayfa üzerinden tanımlanan hücreye değer ataması
 Range("TanimAd").Interior.Color = vbBlue    'Tanımlı Hücrenin rengini değiştirilir
-Range("TanimAd").Clear                      'Tanımlı Hücre temizleniyor
-
+Range("TanimAd").Clear
 End Sub
 '----------------------------------------------------------
 

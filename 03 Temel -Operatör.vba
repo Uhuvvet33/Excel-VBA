@@ -17,7 +17,6 @@ If a And (x = 0 Or y = 1) Then 'if a=True demek yerine
 Else
     MsgBox "yanlış"
 End If
-
 'a = Not a      'a nın değeri True ise False olsun diyoruz
 End Sub
 '----------------------------------------------------------

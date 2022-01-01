@@ -12,7 +12,6 @@ Dim cvp As VbMsgBoxResult   'değişken olarak tanımlaması
                 'sadece bilgi verilecekse pareantez gerekmez
         Exit Sub    'çıkış yapılır
     End If
-
 End Sub
 '----------------------------------------------------------
 

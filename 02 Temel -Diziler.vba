@@ -97,7 +97,6 @@ dizi = Split(veri, ";")
 
 Debug.Print dizi(2)     'dizinin 2. değeri gösteriliyor
                         'Sonuç : 78769
-
 Dim i As Variant
 For Each i In dizi      'dizinin tamamını ayrı olarak listelemek
     Debug.Print i

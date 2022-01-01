@@ -26,8 +26,7 @@ End Sub
 
 Sub InputSyntax() 'InputBox  syntax
 a = InputBox("il kodu girin", "il kodu", 34)
-             'verilen mesaj, bar üstünde, varsayılan 34 değeri
-             
+'verilen mesaj, bar üstünde, varsayılan 34 değeri
 End Sub
 '----------------------------------------------------------
 
