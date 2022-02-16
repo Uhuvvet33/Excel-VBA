@@ -1,0 +1,19 @@
+Sub macro1()
+Dim Filename As String
+
+Path = "C:\Users\mert\Desktop\LISTE\" 'yolu kendi dosyalarınızı bulunduğu yol ile değiştirin
+Filename = Dir(Path & "*.xlsx")
+  Do While Filename <> ""
+  Workbooks.Open Filename:=Path & Filename, ReadOnly:=True
+     For Each Sheet In ActiveWorkbook.Sheets
+     Sheet.Copy after:=ThisWorkbook.Sheets(1)
+     ' sayfa adı ile dosya adı aynı olması için yazdığımız kod
+     Dim LArray() As String
+     LArray = Split(Filename, ".")
+     Sheets(2).Name = LArray(0)
+    
+  Next Sheet
+     Workbooks(Filename).Close
+     Filename = Dir()
+  Loop
+End Sub
