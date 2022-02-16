@@ -1,4 +1,6 @@
 '-----------------Farklı excel dosyalarını sayfa olarak birleştirmek.
+'Bu bilgi alıntıdır.
+
 Sub macro1()
 Dim Filename As String
 
