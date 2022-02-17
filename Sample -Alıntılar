@@ -1,20 +1,23 @@
 '-----------------Farklı excel dosyalarını sayfa olarak birleştirmek.
 'Bu bilgi alıntıdır.
 
-Sub macro1()
+Sub DizinSayfaEkle()
 Dim Filename As String
 
-Path = "C:\Users\user\Desktop\LISTE\" 'yolu kendi dosyalarınızı bulunduğu yol ile değiştirin
-Filename = Dir(Path & "*.xlsx")
+'Aşağıdaki Dosya Yolu olarak Masaüstü ve Sayfa1 K5 hücresinden alınıyor
+Path = CreateObject("WScript.Shell").SpecialFolders("Desktop") & Application.PathSeparator & _
+Sheets(1).Range("k5").Value & "\"    'Dosya Yolunu Sayfa bir K5 hücresinden alıyor
+
+Filename = Dir(Path & "\" & "*.xlsx")
   Do While Filename <> ""
   Workbooks.Open Filename:=Path & Filename, ReadOnly:=True
      For Each Sheet In ActiveWorkbook.Sheets
-     Sheet.Copy after:=ThisWorkbook.Sheets(1)
+     Sheet.Copy After:=ThisWorkbook.Sheets(1)
      ' sayfa adı ile dosya adı aynı olması için yazdığımız kod
      Dim LArray() As String
      LArray = Split(Filename, ".")
-     Sheets(2).Name = LArray(0)
-    
+     Sheets(2).Name = LArray(0)         'Çalışma Sayfa adı 30 karakteri geçemez
+     
   Next Sheet
      Workbooks(Filename).Close
      Filename = Dir()
