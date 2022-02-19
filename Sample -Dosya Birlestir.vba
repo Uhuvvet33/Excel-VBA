@@ -30,6 +30,7 @@ Loop
 
 Sheets(1).Range("K6").Value = Sheets.Count - 1  ' Eklenen Sayfa Sayısı
 Sheets(1).Range("K7").Value = Format(Now)       ' İşlem Zamanı
+' Sheets(1).Range("K7").Value = Format(Now, "dd.mm.yyyy hh:mm")
 Sheets(1).Select
 
 End Sub
