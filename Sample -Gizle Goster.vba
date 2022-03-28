@@ -25,6 +25,5 @@ End Sub
 
 Sub Gizle()
 'Bu işlem daha hızlı boş satırları gizler
-Range("w7:w70").SpecialCells(xlCellTypeBlanks).EntireRow.Hidden = True  'False Tersi işlem
-
+Range("w7:w70").SpecialCells(xlCellTypeBlanks).EntireRow.Hidden = True  'False tersi işlem
 End Sub
