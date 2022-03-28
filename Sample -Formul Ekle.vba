@@ -9,5 +9,11 @@ Sub HucreFormulYaz()
 ' Buradaki kullanımda hesaplayarak işlem yapılıyor. 
 ' Hücreye formül yazılmıyor.
   Sheets(1).[K11].Value = WorksheetFunction.Sum(Range("c6:c20"))
+End Sub
 
+Sub HucreTopla()
+With sheets(2).Range("W7:W70")
+.Formula = "=IFERROR(IF(SUM(E7:V7)>0,SUM(E7:V7),""""),"""")"
+.Value = .Value
+End With
 End Sub
