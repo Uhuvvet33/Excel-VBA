@@ -1,4 +1,4 @@
-Sub Secimler()
+Sub Secimler()     
 'Hücre ve Alan  Seçimleri
 Range("A1").Select
 Range("A1:B2").Select
