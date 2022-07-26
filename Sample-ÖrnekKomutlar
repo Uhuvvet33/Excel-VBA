@@ -1,0 +1,2 @@
+//whatsapp için köprü kullanımı
+=KÖPRÜ("https://web.whatsapp.com/send?phone=+90"&B1&"&text="&C1;A1)
