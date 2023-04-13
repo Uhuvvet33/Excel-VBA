@@ -1,2 +1,5 @@
 //whatsapp için köprü kullanımı
 =KÖPRÜ("https://web.whatsapp.com/send?phone=+90"&B1&"&text="&C1;A1)
+
+//sütünları birleştirmek aralarına değer koyarak
+=SOLDAN(EĞER(A1<>"";A1&"; ";"")&EĞER(A2<>"";A2&"; ";"")&EĞER(A3<>"";A3&"; ";"")&EĞER(A4<>"";A4&"; ";"")&EĞER(A5<>"";A5&"; ";"")&EĞER(A6<>"";A6&"; ";"")&EĞER(A7<>"";A7&"; ";"")&EĞER(A8<>"";A8&"; ";"")&EĞER(A9<>"";A9&"; ";"")&EĞER(A10<>"";A10&"; ";"")&EĞER(A11<>"";A11&"; ";"")&EĞER(A12<>"";A12;"");UZUNLUK(EĞER(A1<>"";A1&"; ";"")&EĞER(A2<>"";A2&"; ";"")&EĞER(A3<>"";A3&"; ";"")&EĞER(A4<>"";A4&"; ";"")&EĞER(A5<>"";A5&"; ";"")&EĞER(A6<>"";A6&"; ";"")&EĞER(A7<>"";A7&"; ";"")&EĞER(A8<>"";A8&"; ";"")&EĞER(A9<>"";A9&"; ";"")&EĞER(A10<>"";A10&"; ";"")&EĞER(A11<>"";A11&"; ";"")&EĞER(A12<>"";A12;""))-2)
