@@ -1,0 +1,20 @@
+Private Sub Worksheet_Change(ByVal Target As Range)
+
+    If Target.Address = "$A$1" Then
+    ActiveSheet.Unprotect Password:="11"
+        If Target.Value = 2 Then
+            Range("C1").Locked = False
+            Range("C1").Interior.ColorIndex = 6
+            Range("D1").Locked = True
+            Range("D1").Interior.ColorIndex = 45
+            ActiveSheet.Protect Password:="11"
+        ElseIf Target.Value = 0 Then
+            Range("C1:D1").Locked = False
+            Range("C1:D1").Interior.ColorIndex = 33
+        Else
+            Range("C1:D1").Locked = True
+            Range("C1:D1").Interior.ColorIndex = 45
+            ActiveSheet.Protect Password:="11"
+        End If
+    End If
+End Sub
